@@ -1,0 +1,242 @@
+.Header {
+  padding: 8px 0;
+  background: black;
+  position: sticky;
+  top: 0;
+  .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .logo {
+      a {
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      svg {
+        width: clamp(25px, 6vw, 35px);
+        height: clamp(25px, 6vw, 35px);
+      }
+    }
+    .block {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      font-weight: 700;
+      justify-content: center;
+      .home {
+        width: clamp(30px, 6vw, 50px);
+        height: clamp(30px, 6vw, 50px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        border-radius: 50%;
+        background: rgb(39, 38, 38);
+        color: rgb(171, 167, 167);
+        font-size: clamp(14px, 3vw, 26px);
+        border: 1px solid black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &:hover {
+          border: 0.5px solid rgb(39, 38, 38);
+          transform: scale(1.04);
+          transition: 0.3s;
+        }
+      }
+      .search {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        width: clamp(200px, 40vw, 470px);
+        height: clamp(27px, 6vw, 47px);
+        border-radius: 25px;
+        background: rgb(39, 38, 38);
+        justify-content: center;
+        &:hover {
+          background: rgb(52, 50, 50);
+          transition: 0.3s;
+          input {
+            background: rgb(52, 50, 50);
+            transition: 0.3s;
+            cursor: pointer;
+          }
+        }
+        input {
+          width: clamp(140px, 30vw, 470px);
+          height: clamp(20px, 6vw, 45px);
+          border: none;
+          background: rgb(39, 38, 38);
+          outline: none;
+          font-size: clamp(12px, 2vw, 16px);
+        }
+
+        .sear {
+          color: rgb(171, 167, 167);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: clamp(8px, 3vw, 26px);
+          margin-inline: clamp(11px, 2vw, 14px);
+          padding-left: clamp(6px, 2vw, 8px);
+        }
+        .search_bl {
+          display: flex;
+          gap: 10px;
+          margin-inline: clamp(10px, 2vw, 12px);
+          padding-right: clamp(7px, 2vw, 12px);
+          justify-content: center;
+          align-items: center;
+          .slesh {
+            width: 0.5px;
+            height: clamp(15px, 3vw, 23px);
+            background: rgb(171, 168, 168);
+          }
+          .file {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: rgb(205, 199, 199);
+            font-size: clamp(14px, 3vw, 26px);
+
+            &:hover {
+              transition: 0.2s ease-in-out;
+              transform: scale(1.03);
+            }
+          }
+        }
+        .close {
+          color: rgb(171, 168, 168);
+          margin-inline: clamp(10px, 2vw, 12px);
+          font-size: clamp(20px, 3vw, 36px);
+          &:hover {
+            color: white;
+          }
+        }
+      }
+    }
+    .bellAuth {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      // gap: clamp(10px, 2vw, 20px);
+
+      .btn {
+        margin-inline: clamp(10px, 2vw, 20px);
+        width: clamp(14px, 2vw, 50px);
+        height: clamp(14px, 2vw, 50px);
+        border-radius: 50%;
+
+        border: none !important;
+        outline: none !important;
+        background: transparent;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        svg {
+          font-size: 22px;
+          color: rgb(168, 165, 165);
+          margin: 0 auto;
+          cursor: pointer;
+          &:hover {
+            color: rgb(232, 226, 226);
+          }
+        }
+      }
+
+      .auth {
+        .user {
+          width: clamp(35px, 6vw, 50px);
+          height: clamp(35px, 6vw, 50px);
+          border-radius: 50%;
+          background: rgb(39, 38, 38);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border: 1px solid black;
+          cursor: pointer;
+          &:hover {
+            border: 2px solid rgb(39, 38, 38);
+            transition: 0.3s;
+            h5 {
+              text-align: center;
+              font-size: clamp(12px, 4vw, 16px);
+              width: clamp(24px, 4vw, 38px);
+              height: clamp(24px, 4vw, 38px);
+              transition: 0.3s;
+            }
+          }
+          h5 {
+            width: clamp(22px, 4vw, 35px);
+            height: clamp(22px, 4vw, 35px);
+            border-radius: 50%;
+            background: rgb(228, 181, 39);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: black;
+            font-size: clamp(8px, 3vw, 14px);
+          }
+        }
+        .login {
+          padding: 6px 12px;
+          border-radius: 10px;
+          background: rgb(50, 225, 82);
+          color: black;
+          border: 3px solid black;
+          cursor: pointer;
+        }
+        .logout {
+          display: flex;
+          flex-direction: column;
+          align-items: start;
+          gap: 18px;
+          width: 200px;
+          height: 230px;
+          border-radius: 5px;
+          background: rgb(39, 38, 38);
+          position: fixed;
+          right: 25px;
+          top: 65px;
+          padding: 12px 18px;
+
+          .setting {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            align-items: start;
+            width: 100%;
+            color: white;
+          }
+
+          hr {
+            width: 100%;
+            height: 0.1px;
+            background: rgb(171, 168, 168);
+          }
+
+          h2 {
+            font-size: 13px;
+            color: white;
+            margin-bottom: 10px;
+          }
+
+          button {
+            padding: 7px 12px;
+            border-radius: 10px;
+            background: red;
+            border: none;
+            cursor: pointer;
+            &:hover {
+              transition: 0.2s;
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

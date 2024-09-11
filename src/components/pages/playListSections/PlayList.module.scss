@@ -1,0 +1,22 @@
+.PlayList {
+  .content {
+    .myPlayListDet {
+      .playlist_head {
+        img {
+          width: 128px;
+          height: 128px;
+          border-radius: 10px;
+          object-fit: cover;
+        }
+
+        h1 {
+          font-size: 80px;
+          color: #ffffff;
+        }
+
+        display: flex;
+        align-items: center;
+      }
+    }
+  }
+}
